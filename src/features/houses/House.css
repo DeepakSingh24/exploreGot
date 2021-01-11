@@ -1,25 +1,25 @@
-.character {
+.house {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  .character__display {
+  .house__display {
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(236, 228, 228);
     margin: 10px;
     border-radius: 7px;
   }
-  .character__header {
+  .house__header {
     background-color: #dbeafe;
     padding: 10px;
   }
-  .character__body {
+  .house__body {
     padding: 10px;
   }
-  .character__footer {
+  .house__footer {
     text-align: center;
     padding: 10px;
   }

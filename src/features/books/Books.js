@@ -10,7 +10,6 @@ export function Books() {
   const [books, setBooks] = useState([]);
   const history = useHistory();
   useEffect(() => {
-    console.log("Inside books");
     fetch("https://www.anapioficeandfire.com/api/books?page=1&pageSize=9")
       .then((res) => res.json())
       .then((resp) => {
@@ -23,12 +22,12 @@ export function Books() {
     history.push("/viewbook");
   };
   return (
-    <div className="character">
+    <div className="book">
       {books.map((ele, ind) => {
         return (
-          <div className="character__display" key={ind}>
-            <div className="character__header">{ele.url}</div>
-            <div className="character__body">
+          <div className="book__display" key={ind}>
+            <div className="book__header">{ele.url}</div>
+            <div className="book__body">
               <p>
                 <span>Name-</span> {ele.name}
               </p>
@@ -44,7 +43,7 @@ export function Books() {
                 {ele.numberOfPages}
               </p>
             </div>
-            <div className="character__footer">
+            <div className="book__footer">
               <button
                 className="view__button"
                 onClick={() => {

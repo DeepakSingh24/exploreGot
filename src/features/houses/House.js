@@ -19,12 +19,12 @@ export function House() {
   }, [dispatch]);
 
   return (
-    <div className="character">
+    <div className="house">
       {house.map((ele, ind) => {
         return (
-          <div className="character__display" key={ind}>
-            <div className="character__header">{ele.url}</div>
-            <div className="character__body">
+          <div className="house__display" key={ind}>
+            <div className="house__header">{ele.url}</div>
+            <div className="house__body">
               <p>
                 <span>Name-</span> {ele.name}
               </p>
@@ -32,7 +32,7 @@ export function House() {
                 <span>Region-</span> {ele.region}
               </p>
             </div>
-            <div className="character__footer">
+            <div className="house__footer">
               <button
                 className="view__button"
                 onClick={() => {

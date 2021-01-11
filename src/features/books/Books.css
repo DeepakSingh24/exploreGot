@@ -1,25 +1,25 @@
-.character {
+.book {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  .character__display {
+  .book__display {
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(236, 228, 228);
     margin: 10px;
     border-radius: 7px;
   }
-  .character__header {
+  .book__header {
     background-color: #dbeafe;
     padding: 10px;
   }
-  .character__body {
+  .book__body {
     padding: 10px;
   }
-  .character__footer {
+  .book__footer {
     text-align: center;
     padding: 10px;
   }
