@@ -1,11 +1,11 @@
-.characterView {
+.houseView {
     display: flex;
     justify-content: center;
     margin-top:30px;
     
   
   }
-  .characterView__wrapper{
+  .houseView__wrapper{
     display: flex;
     flex-direction: column;
     border:1px solid lightgray;
@@ -13,7 +13,7 @@
     flex:0.5;
   }
   
-  .characterView__footer__btn {
+  .houseView__footer__btn {
     width: 70px;
     height: 30px;
     border-radius: 8px;
@@ -21,17 +21,17 @@
     background-color: #EDE9FE;
     outline: none;
   }
-  .characterView__header {
+  .houseView__header {
     padding: 10px;
     display: flex;
     background-color: #EDE9FE;
   }
-  .characterView__body {
+  .houseView__body {
     padding: 10px;
     display: flex;
     flex-direction: column;
   }
-  .characterView__footer {
+  .houseView__footer {
     padding: 10px;
     display: flex;
     justify-content: center;

@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { selectedSingleHouse } from "./HouseSlice";
+import './HouseView.css'
 
 export function HouseView() {
   const selectedHouse = useSelector(selectedSingleHouse);
@@ -10,18 +11,18 @@ export function HouseView() {
     history.goBack();
   }
   return (
-    <div className="characterView">
-      <div className="characterView__wrapper">
-        <div className="characterView__header">
+    <div className="houseView">
+      <div className="houseView__wrapper">
+        <div className="houseView__header">
           <p>Url-{selectedHouse.url}</p>
         </div>
-        <div className="characterView__body">
+        <div className="houseView__body">
           <p>Name-{selectedHouse.name}</p>
           <p>Gender-{selectedHouse.region}</p>
           {/* <p>Culter-{selectedHouse.numberOfPages}</p> */}
         </div>
-        <div className="characterView__footer">
-          <button className="characterView__footer__btn" onClick={goBack}>
+        <div className="houseView__footer">
+          <button className="houseView__footer__btn" onClick={goBack}>
             Back
           </button>
         </div>

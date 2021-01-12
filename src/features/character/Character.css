@@ -1,4 +1,8 @@
-.character {
+.character{
+  display: flex;
+  flex-direction: column;
+}
+.character__wrapper {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -31,5 +35,11 @@
   border: none;
   background-color: #dbeafe;
   outline: none;
+}
+.character__pagination{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 65px;
+  flex-wrap: wrap;
 }
 
