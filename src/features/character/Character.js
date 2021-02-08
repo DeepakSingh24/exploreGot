@@ -19,13 +19,13 @@ export function Character() {
     }
     return numArray;
   };
-  useEffect(async () => {
+  useEffect(() => {
      fetch(
       "https://www.anapioficeandfire.com/api/characters?page=1&pageSize=100"
     )
       // fetch('https://www.anapioficeandfire.com/api/characters')
       .then((res) => res.json())
-      .then(async (resp) => {
+      .then( (resp) => {
          setAllCharacter(resp);
         dispatch(setAllcharacters(resp));
       });
